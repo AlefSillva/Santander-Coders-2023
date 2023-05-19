@@ -52,11 +52,63 @@ REPOSITÓRIO REMOTO:
 
 COMANDO:
 
+q:
+sai dos comandos, como por ex: sai do resultado do comando "git log"
+
 git remote:
 mostra informações em relação ao repositório remoto.
 
 git push origin main (ou master):
 envia para o repositório remoto.
+
+git pull:
+puxa tudo que tem no repositório remoto e junta o meu código com o do repositório. 
+
+git fetch:
+é como o git pull porém verifica todas as modificações que estão no repositório remoto, porém ele nao adiciona ao meu código automaticamente comom no "git pull".
+
+se o usarmos o "git diff origin/master" podemos ver quais modificações  foram feitas no repositório remoto, após essa visualização podemos dar um "git pull" e trazer essa linha modificada para nosso código.
+
+OBS: git fet e git pull , são usado quando mais de uma pessoa está mexendo no código, assim podemos ver primeiro o que a outra pessoa modificou com "git fetch" e caso aceitemos essa modificação, puxamos ela para nosso código no repositório local com "git pull".
+
+------------------------------------------------------
+GITHUB:
+Plataforma de hospedagem, que pode até ser usada como currículo, disponibilizando o código lá.
+
+tambem podemos estudar por ele, em caso de algum código de projeto nos chamar atenção, podemos baixar para no repositório local e analisá-lo e estudá-lo.
+
+------------------------------------------------------
+GIT BRANCH:
+são ramificações que podem ser feitas no desenvolvimento do código.
+Podem ser construídas caso queiramos compartilhar um projeto com um amigo e ambos desenvolverem em paralelo, e la na frente os códigos se unam.
+
+COMANDO PARA CRIAR UMA NOVA BRANCH:
+"git branch" + nomedabranch
+
+por exemplo:
+"git branch testing (cria uma branch chamada testing)"
+
+
+COMANDO QUE INDICA ONDE O HEAD ESTÁ:
+
+git log --online -decorate
+
+por exemplo: mostra (HEAD -> master, origin/master) indicando que o "HEAD" está na master.
+
+PARA FAZER O HEAD IR PARA OUTRA BRANCH USAMOS O COMANDO:
+
+"git checkout" + nomedabranch 
+
+ex: git checkout teste = trocará o head da master para a branch "teste".
+
+------------------------------------------------------
+MERGING BRANCHES:
+O git merge une os projetos entre as branches paralelas e a branch master(main), une fluxos.
+
+COMANDO:
+git merge + nomedabranch
+
+por ex: git merge teste = vai mostrar que um arquivo foi mudado, puxando o arquivo da branch ramificada para a master em um novo commit.
 
 
 
