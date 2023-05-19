@@ -1,0 +1,97 @@
+anotações curso ADA TECH
+
+GIT & VERSIONAMENTO 
+
+versionamento são registros de código que nos permite retornar a uma versão anterior em caso de erros.
+
+GIT: é um sistema de versionamento de código, que guarda os regisros de versão com snapshots (fotos) do estado do projeto, além da referência/caminho para essa foto. 
+
+hash = registro
+
+------------------------------------------------------
+Estados que o git classifica dentro do repositório:
+
+untracked:
+criação de um arquivo que não existia no repositório.
+
+unmofified:
+ esse arquivo ja está mapeado por git, já passou por um processo de "stage" além de ter sido "commitado". (se encontra salvo no estado que está, todas as modificações feitas anteriormente estão salvas)
+
+Modified:
+Existem mudanças que podem ser passadas para o commit
+
+Staged:
+área preparatória para dar o commit. 
+
+------------------------------------------------------
+COMANDOS: 
+
+git status:
+mostra o status 
+
+git add:
+adiciona as modificações para o STAGE.
+
+git diff:
+mostra as diferençãs emtre as linhas que foram modificadas.
+
+git diff --staged:
+mostra as modificações porém quando o arquivo está na area de staged
+
+git log:
+mostra um histórico dos últimos commit's feitos
+
+git restore:
+restaura as modificações anteriores do arquivo, sai de MODIFIED e volta para UNMODIFIED. 
+
+git restore --staged ./nomedoarquivo: 
+especifica o local onde as modificações que quero remover da área de STAGED, quando desistimos de commitá-lo e retornamos ele para a área de modified.
+
+------------------------------------------------------
+REPOSITÓRIO REMOTO:
+
+COMANDO:
+
+git remote:
+mostra informações em relação ao repositório remoto.
+
+git push origin main (ou master):
+envia para o repositório remoto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
