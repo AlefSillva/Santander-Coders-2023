@@ -1,0 +1,121 @@
+FORMULÁRIOS
+
+form: 
+tag para a criação de um formulário.
+
+-----------------------------------------
+input: (tag sem fechamento)
+os atributos definem como ela será renderizada.
+
+Tipos de input:
+
+1º atributo: Type="tipo": tipo texto
+
+2º atributo: Id="nomedoid": referencia o input dando um identificação p/ ele
+
+3º Placehoolder: texto de sugestão de um input
+
+4º value: define o conteúdo(valor) que estará dentro do input(já inicia no input)
+
+5º Name: forma como o JS identifica o input.
+o JS identifica cada um dos campos do formulário de uma forma específica.
+
+-----------------------------------------
+Label: define o título do "input", texto que diz ao que se refere o input.
+
+- atributo for="" (para): significa, para que é esse label, ex: texto.
+
+devemos também sempre criar um "for" para o label igual ao "id" do input, para referenciar que o label se refere àquele input.
+
+-----------------------------------------
+TIPOS DE INPUT:
+
+INPUT: Password
+utilizado para digitação de senhas.
+
+-----------------------------------------
+INPUT: E-mail
+utilizado para a digitação de E-mails.
+
+-----------------------------------------
+INPUT: Date
+utilizado para a digitação de datas.
+
+-----------------------------------------
+INPUT: Time
+utilizado para a digitação de horas.
+
+-----------------------------------------
+INPUT: Number
+utilizado para a digitação de números.
+
+-----------------------------------------
+INPUT: File
+utilizado para subir arquivos.
+
+-----------------------------------------
+INPUT: Url
+utilizado para a digitação de um link.
+
+-----------------------------------------
+INPUT: Color
+utilizado para criação de uma caixa de cores.
+
+-----------------------------------------
+INPUT: Range
+utilizado para criação de uma barra que pode ser aumentada pelo usuário.
+
+- usamos o "value" para definir onde a barrinha começa.
+- usamos "MAX" para definir o máximo que ela pode ir.
+- usamos o "MIN" para definir o mínimo onde ela iniciará
+
+-----------------------------------------
+INPUT: Checkbox
+cria uma caixa de seleção (ticar), que pode ser marcada.
+
+- possui um atributo "checked" que faz com que a caixa ja venha marcada.
+
+-----------------------------------------
+INPUT: Radio
+cria uma caixa de seleção (ticar), que pode ser marcada, porém se houver várias, ele só permite marcar uma única opção.
+
+-----------------------------------------
+INPUT: Reset
+cria um botão que redefine todas as informações ao estado inicial(apagando os dados digitados).
+
+- o nome do botão é alterado pelo atributo 'value="nomedesejado"'
+
+-----------------------------------------
+INPUT: Submit
+cria um botão de envio do formulário.
+
+obs: quando clicado ele altera a url e adiciona os dados preenchidos no formulário.
+
+obs #2: O formulário é enviado por meio de um "action", que não não é definido a ação será simplesmente recarregar a página. 
+
+- method: (usa o get como default)
+
+
+- o nome do botão é alterado pelo atributo 'value="nomedesejado"'
+
+-----------------------------------------
+INPUT: Textarea
+cria uma caixa de texto, onde podemos escrever comentários ou feedbacks.
+
+- cols: define o número de colunas (quantas letras podemos digitar
+- rows: define o número de linhas
+
+-----------------------------------------
+INPUT: Select
+campo para seleção de opções.
+
+devem ser criados "OPTIONS", que são as opções de escolha dentro do "SELECT".
+
+- value: o que vai ser enviado no formulário
+
+obs: podemos criar uma "OPTION"  "disabled" somente p/ sugerir uma ação, e "selected" para que ela já inicie selecionada, mas o usuário não pode escolher essa oção, pos não é uma opção válida.
+
+código de exemplo:
+	<option value="" disabled selected>selecione uma opção</option>
+
+-----------------------------------------
