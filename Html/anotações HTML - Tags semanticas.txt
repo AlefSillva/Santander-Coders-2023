@@ -1,0 +1,60 @@
+Tags semânticas:
+
+header:
+cabeçalho
+
+Nav:
+onde adicionamos link de navegação na dentro da página.
+
+----------------------------------------
+main:
+parte principal
+
+----------------------------------------
+aside:
+conteúdo lateral 
+(pode ser usado tanto dentro quanto fora do main, preferível fora)
+
+----------------------------------------
+footer:
+rodapé
+
+----------------------------------------
+section:
+sessões dentro do "main"
+
+----------------------------------------
+obs: Id: atributo que identifica uma tag de forma única.
+----------------------------------------
+
+article:
+blocos de notícias repetitivos, por exemplo, uma sessão (section) de notícias com pequenos blocos de imagens e títulos, o conjunto desses blocos podem ser aninhados em um ARTICLE.
+----------------------------------------
+obs: Dentro de um "article", podemos usar as tags:
+header | main | footer
+
+pois quando utilizamos o "article" é como se criássemos um novo scopo.
+
+A forma de uso seria assim: 
+
+- No header: colocamos a imagem
+
+- No main: Título/ resumo do post
+
+- No footer: colocamos o autor.
+
+----------------------------------------
+
+figure:
+uma tag de inclusão de figuras. Utilizamos a "figure" para envolver imagens, pois ela é um tipo de "div".
+
+----------------------------------------
+figcaption:
+tag que adiciona legenda a imagens, deve ser usada dentro da tag "figure".
+
+----------------------------------------
+
+DICA: ao invés de colocarmos o direcionamento do link na tag "a" para "index" quando quiser voltar para a página inicial, podemos apenas colocar uma "/".
+
+----------------------------------------
+
