@@ -1,0 +1,28 @@
+TABELAS:
+
+cabeçalhos & corpo:
+
+table: tag que define a criação de uma tabela.
+
+thead: cabeçalho/título da tabela
+(dentro do "thead" sempre usaremos "th")
+
+
+
+tbody: corpo da tabela
+(dentro do "Tbody" sempre usaremos "td"
+
+
+----------------------------------------
+linhas & colunas:
+tr: cria uma linha
+
+th: cria o título da linha destacado (utilizado somente no "thead")
+
+td: (table data) cria uma linha(sempre utilizado no "tbody")
+
+----------------------------------------
+mesclando células (linhas ou colunas):
+- rowspan="#numerodelinhas": faz a mesclagem de linhas.
+
+- colspan="#numerodecolunas": faz a mesclagem de colunas
