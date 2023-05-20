@@ -1,0 +1,39 @@
+CSS 
+
+tipos de uso:
+inline | tag STYLE | arquivo externo 
+
+-----------------------------------------
+CORES:
+
+RGB = red, green, blue
+
+só podemos usar 3 ou 6 dígitos quando usamos o tipo hexadecimal de cores. 
+Ex: #ff00ff e quando os dígitos se repetem podemos usar só 3 dígitos -> #f0f
+
+-----------------------------------------
+BACKGROUND: 
+
+background-image: 
+utilizando a oção url("") podemos adicionar o endereço de uma imagem e usá-la como BG.
+porém ela virá somente como um pequeno quadrado no canto superior esquerdo da tela.
+
+É necessário definir o tamanho da imagem usando:
+
+background-size: 
+que define o tamanho da imagem através de propriedades.
+
+PROPRIEDADES: 
+
+COVER:
+capa / ele corta a imagem de acordo com a proporção de width e height definidas.
+
+CONTAIN:
+repete a imagem para preencher o bloco (div) em que a imagem está inserida.
+
+para tirar a repetição, podemos usar "background-repeat" e usar a propriedade "no-repeat".
+
+background-attachment:
+A propriedade CSS define se a posição de uma imagem de plano de fundo é fixa na viewport ou rola com o bloco que a contém
+
+
