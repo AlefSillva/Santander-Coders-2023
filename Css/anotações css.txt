@@ -36,4 +36,30 @@ para tirar a repetição, podemos usar "background-repeat" e usar a propriedade 
 background-attachment:
 A propriedade CSS define se a posição de uma imagem de plano de fundo é fixa na viewport ou rola com o bloco que a contém
 
+-----------------------------------------
+MEDIDAS: font-size
+
+rem: em relação
+Tamanho da fonte do elemento raiz.
+
+em:
+Tamanho da fonte do pai, no caso de propriedades tipográficas como font-size, e tamanho da fonte do próprio elemento, no caso de outras propriedades como width.
+
+-----------------------------------------
+obs: sempre usar REM para manter mais padronizado e não haver problemas de responsividade.
+-----------------------------------------
+obs 2: a porcentagem do Height só é usada, caso o elemento esteja dentro de um elemento pai, pois assim ele irá basear seu tamanho na porcentagem escolhida usando o PAI como parâmetro.
+
+-----------------------------------------
+PSEUDO-CLASSES:
+Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especificam um estado especial do elemento selecionado. Por exemplo, :hoverpode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.
+
+-----------------------------------------
+OBS: inline não respeita altura nem largura.
+
+border-box: preserva as dimensões da caixa, ou seja a caixa nao aumenta quando damos padding.
+O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.
+
+-----------------------------------------
+display flex:
 
