@@ -1,0 +1,57 @@
+FUNÇÃO:
+
+De forma simples é um trecho do código que pode ser reaproveitável.
+
+DEFINIÇÃO:
+As funções são um dos blocos de construção fundamentais em JavaScript. Uma função em JavaScript é semelhante a um procedimento - um conjunto de instruções que executa uma tarefa ou calcula um valor, mas para que um procedimento se qualifique como uma função, ele deve receber alguma entrada e retornar uma saída onde haja algum relacionamento óbvio entre o entrada e a saída. Para usar uma função, você deve defini-la em algum lugar no escopo do qual deseja chamá-la.
+
+Declarações de função:
+Uma definição de função (também chamada de declaração de função ou instrução de função ) consiste na functionpalavra-chave, seguida por:
+
+O nome da função:
+Uma lista de parâmetros para a função, entre parênteses e separados por vírgulas.
+As instruções JavaScript que definem a função, entre colchetes, { /* … */ }.
+
+___________________________________________________________
+COMO ENVIAR PARÂMETROS PARA A FUNÇÃO:
+colocando dentro dos parenteses da função.
+
+ex: nesse caso o parâmetro enviado foi "nome"
+
+function saudacao(nome) {
+    console.log('Olá, seja bem-vindo(a) ao nosso curso de JavaScript')
+}
+
+OBS: sempre que for chamar a função, já que enviamos "nome" como parâmetro, ele tem de ser especificado na chamada da função.
+
+EX:
+saudacao('Leeh')
+
+___________________________________________________________
+TEMPLATE STRING: "${}"
+___________________________________________________________
+PARÂMETRO DEFAULT: 
+
+ex:
+function saudacao(nome, curso = 'JAVA') {
+    console.log(´Olá, ${nome}! Seja bem-vindo(a) ao nosso curso de ${curso}`)
+}
+
+no exemplo acima definimos dois parâmetros: nome | curso
+Porém o "curso" já está com uma definição DEFAULT, então caso o usuário não informe o nome do curso, o programa retornará que o nome do curso é "JAVA".
+
+___________________________________________________________
+
+OBS: devemos sempre optar por usar o "RETURN" dentro da função ao invés do "console.log", para que a função fique genérica.
+
+Então criamos uma variável fora da função que receberá o retorno da função e ai sim, podemos imprimir essa variável com "console.log"
+
+OBS2: todas as vezes que usamos "return" numa função, ela acaba ali. Se houver necessidade de se fazer algo dentro da função, deve ser antes do "retorno" (return) pois depois dele a função encerra.
+
+OBS3: em caso de haver um "IF" dentro da função, ela não encerra no primeiro "return" pois ainda podemos usar um segundo ( como se fosse um "else")
+
+___________________________________________________________
+
+
+
+
