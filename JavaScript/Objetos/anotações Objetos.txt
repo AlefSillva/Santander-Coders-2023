@@ -1,0 +1,66 @@
+OBJETOS:
+ um objeto é parecido com um array, porém não é definido por índices, e sim, por "chave:valor"
+
+para criar um objeto usamos "{}"
+
+ex:  let pessoa = {
+    nome: 'Leeh',
+    idade: 28,
+}
+
+OBS: não pe necessário usar aspas na chave, a não ser que, o nome da chave sejam duas paralavras (que obrigatoriamente são separadas por "-") no exemplo acima a chave é a palavra "nome"e o valor "alef".
+
+____________________________________________________
+ACESSANDO OS OBJETOS:
+
+exemplos:
+estrutura -> "console.log(pessoa.chavedoobjeto)" <-
+
+- ex: console.log(pessoa.nome) -> imprimirá o nome definido(chave) = "Alef"
+
+- ex2: console.log(pessoa.idade) -> imprimirá a "chave" idade = 28
+
+em caso de nomes de chaves grandes, por exemplo: nome-da-pessoa, o uso obrigatório de aspas se extende para a chamada desse objeto também e não só em sua criação, e também, o uso de colchetes ao invés de ponto.
+
+EX: 
+    let pessoa = {
+    'nome-da-pessoa: 'Leeh',
+    idade: 28,
+}
+
+chamada:
+console.log(pessoa['nome-da-pessoa']) -> o console imprimirá a chave "nome-da-pessoa" = "Alef"
+
+____________________________________________________
+ADICIONANDO OBJETOS NOVOS:
+
+EX: 
+pessoa.altura = 1.70
+
+RESULTADO: 
+"console.log(pessoa) -> imprimirá as chaves {nome: 'Alef', idade: 28, altura: 1.70}
+
+acrescentando a chave "altura" ao objeto.
+
+____________________________________________________
+SUBSTITUIR UMA CHAVE:
+
+ex:
+pessoa.nome = 'Leeh' -> quando imprimir o nome 'Alef' terá sido substituído por 'Leeh'
+
+____________________________________________________
+REMOVER UM OBJETO:
+
+temos que usar a palavra reservada "delete"
+
+EX:
+delete pessoa.altura -> ao imprimir no console a chave "altura" não está mais no objeto.
+
+____________________________________________________
+PERCORRER UM OBJETO:
+
+FOR IN: for ( let chave in pessoa ) {
+		console.log(chave)
+	{
+IMPRIMIRÁ AS CHAVES DENTRO DO OBJETO:
+ "nome" | "idade"
