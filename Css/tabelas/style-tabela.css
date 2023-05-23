@@ -1,0 +1,48 @@
+table , td , th {
+    border: 1px solid black;
+    
+}
+
+table tr#um:first-child {
+    background-color: chocolate;
+    color: white;
+}
+
+table {
+    background-color: cadetblue;
+}
+
+table td:nth-child(even) {
+    background-color: blueviolet;
+    font-size: 2.4rem;
+    border-collapse: collapse;
+}
+
+.boxes {
+    position: relative;
+}
+
+.box {
+    display: inline-block;
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 10px solid #f00;
+    position: relative;
+    
+}
+
+.box:nth-child(1){
+    position: absolute;
+    top: 450px;
+    left: 200px;
+}
+
+img {
+    height: 10rem;
+    width: 500px;
+    object-fit: cover;
+}
