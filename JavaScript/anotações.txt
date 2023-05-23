@@ -1,0 +1,68 @@
+comando para limpar o terminal:
+console.clear()
+
+como mudar o tipo de uma variável: (de forma manual)
+ex: 
+const numero = 10
+
+console.log(numero, typeof numero): irá exibir o número dentro da variável "número"(10) e o tipo, "NUMBER".
+
+para mudar: devemos definir uma nova variável e especificar o tipo após o sinal de "="
+sempre inciando o nome do tipo com letra maiúscula.
+ex:
+const numeroEmFormatoDeString = String(numero)
+
+e para converter número em string usamos "NUMBER('numeroasermudado')":
+ex: 
+console.log(Number("25")) - tranforma o numero 25 em uma string.
+OBS: sempre colocar "aspas" para identificar que é uma String.
+
+parseFloat: converte para número com ponto flutuante/casa decimal.
+Obs: pode também ser convertido para decimal apenas usando "number", é preciso somente que o numero seja escrito com um ponto (.).
+
+
+coerção automática:
+JS em caso de adição, ambos os valores devem ser do tipo "number", pois se não ele entenderá o sinal de "+" ele irá concatenar a string ao valor do tipo "number".
+
+ex: 10 + 5 = 15
+
+ex (number + string) 10 + '5' = 105 - pois ele concatenou o number e a string.
+
+PORÉM EM CASO DE SUBTRAÇÃO  ele executará a conta normalmente, pois ele converte automaticamente a string para number
+
+-------------------------------------------------------
+ESTRUTURAS CONDICIONAIS/CONTROLE DE FLUXO:
+if | else if | else
+
+-------------------------------------------------------
+COMANDO BONUS:
+Comando para instalar uma biblioteca de leitura de dados no node via "npm":
+npm install readline-sync
+
+- instala somente na pasta do arquivo.
+
+-------------------------------------------------------
+LAÇOS DE REPETIÇÃO: usando a biblioteca de leitura de dados instalada via node.js
+
+OBS: é necessário o uso do "require()" 
+
+ex: const input = require('readline-sync') - nome da biblioteca instalada;
+----------------------
+let numero = input.question('numero, typeof numero'): vai pedir o dado do usuário e mostrar o tipo
+
+----------------------
+OBS: POR PADRÃO O INPUT SEMPRE SERÁ LIDO COMO STRING, PARA MUDAR O TIPO PARA NÚMERO DEVEMOS SEGUIR O SEGUINTE EXEMPLO:
+
+const numero = Number(input.question('Qual numero voce escolhe? '))
+
+adicionando "number(" antes do input
+----------------------
+
+LAÇO WHILE:
+A declaração while cria um laço que executa uma rotina especifica enquanto a condição de teste for avaliada como verdadeira. A condição é avaliada antes da execução da rotina.
+
+----------------------
+LAÇO FOR:
+A instrução for cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência.
+
+
