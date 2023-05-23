@@ -1,0 +1,20 @@
+GRID:
+
+serve para criar layouts dinâmicos.
+
+grid-template-columns : organiza as colunas do grid.
+
+FR: unidade flexível
+
+grid-template-rows: minmax("valormin", "valormax"):
+organiza as linhas do grid.
+
+GAP:
+é o mesmo usado no flex-box.
+
+dá espaçamento entre linhas e colunas. (col-gap e row-gap)
+
+grid-template-areas: de
+A grid-template-areas propriedade CSS especifica as áreas de grade nomeadas , estabelecendo as células na grade e atribuindo-lhes nomes.
+
+
