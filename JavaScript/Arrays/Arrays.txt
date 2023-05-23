@@ -1,0 +1,123 @@
+ESTRUTURA DE DADOS:
+
+ARRAYS: 
+para criar uma ARRAY usamos "[]", ex: let arr = [] cria um array vazio
+
+______________________________________________________
+FOR:
+
+______________________________________________________
+FOR OF: 
+A for...ofinstrução executa um loop que opera em uma sequência de valores provenientes de um objeto iterável . Objetos iteráveis ​​incluem instâncias de built-ins como Array, String, TypedArray, Map, Set, NodeList(e outras coleções DOM), bem como o argumentsobjeto, geradores produzidos por funções geradoras e iteráveis ​​definidos pelo usuário.
+
+ex:
+let arr = ['Leeh', 28, 1.70, true] // Array
+
+for (let elemento of arr) { // FOR OF
+    
+}
+
+"a cada iteração quero que você pegue um elemento do array"
+
+______________________________________________________
+FOR IN:
+O laço for...in interage sobre propriedades enumeradas de um objeto, na ordem original de inserção. O laço pode ser executado para cada propriedade distinta do objeto.
+
+syntax: 
+for (let indice in arr) {
+    
+}
+
+quando usamos "for in" estamo percorrendo os "índices" dos elementos.
+ex: 
+0, 1, 2, 3 ...
+
+se quisermos mostrar os índices e acessar o dado de cada índice.
+ex:
+for (let indice in arr) {
+    console.log(indice, arr[indice])
+}
+
+______________________________________________________
+ARRAYS PART-2:
+
+MÉTODOS DE ARRAYS:
+São como funções dentro de variáveis, e são funções pois possuem parênteses.
+
+
+FATIAMENTO:
+O slice()método retorna uma cópia superficial de uma parte de uma matriz(ARRAY) em um novo objeto de matriz(ARRAY) selecionado de startpara end ( endnão incluído) onde starte endrepresenta o índice de itens nessa matriz. A matriz original não será modificada.
+
+
+ex: 
+
+let arr1 = [38, 12, 45, 34, 29]
+let arr2 = []
+// - Fatiamento "slice"
+
+console.log(arr1.slice(0,2)) // mostra o inicio do fatiamento começando no elemento no índice "0" e o "2" define a quantidade de elementos que serão pegos.
+
+______________________________________________________
+.PUSH():
+O push()método adiciona os elementos especificados ao final de uma matriz e retorna o novo comprimento da matriz.
+
+______________________________________________________
+.UNSHIFT():
+O unshift()método adiciona os elementos especificados ao início de uma matriz e retorna o novo comprimento da matriz.
+
+______________________________________________________
+.pop():
+O pop()método remove o último elemento de uma matriz e retorna esse elemento. Este método altera o comprimento da matriz.
+
+OBS: O elemento removido pode ser visto depois de removido.
+
+______________________________________________________
+.SHIFT():
+O shift()método remove o primeiro elemento de uma matriz e retorna esse elemento removido. Este método altera o comprimento da matriz.
+
+______________________________________________________
+CONCATENAR ARRAY: 
+
+.CONCAT():
+
+O concat()método é usado para mesclar dois ou mais arrays. Este método não altera os arrays existentes, mas retorna um novo array.
+
+ex: 
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+
+console.log(array1.concat(array2));
+console.log(array2.concat(array1));
+
+______________________________________________________
+BUSCAR ELEMENTOS NO ARRAY:
+
+.INDEXOF():
+O indexOf()método retorna o primeiro índice no qual um determinado elemento pode ser encontrado na matriz ou -1 se não estiver presente.
+
+ex:
+console.log(arr1)
+
+let indiceDoElemento34 = arr1.indexOf(34)
+
+console.log(indiceDoElemento34)
+
+______________________________________________________
+OBS: Sempre que um elemento inexistente for buscado, o JS retornará o valor "-1"
+
+OBS2: sempre que houverem dois elementos iguais no mesmo array o JS sempre vai retornar o indice do primeiro.
+
+______________________________________________________
+.LASTINDEXOF():
+O lastIndexOf()método retorna o último índice no qual um determinado elemento pode ser encontrado na matriz ou -1 se não estiver presente. A matriz é pesquisada de trás para frente, começando em fromIndex.
+
+______________________________________________________
+.INCLUDES():
+O includes()método determina se um array inclui um determinado valor entre suas entradas, retornando trueou falseconforme apropriado.
+
+______________________________________________________
+.REVERSE():
+O reverse()método inverte uma matriz no lugar e retorna a referência à mesma matriz, o primeiro elemento da matriz agora se tornando o último e o último elemento da matriz tornando-se o primeiro. Ou seja, a ordem dos elementos no array será virada no sentido oposto ao indicado anteriormente.
+
+Para inverter os elementos em uma matriz sem alterar a matriz original, use toReversed().
+
