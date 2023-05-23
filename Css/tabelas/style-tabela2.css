@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4q3JG?ver=1f8b&q=60&m=6&h=384&w=768&b=%23FFFFFFFF&l=f&o=t&aim=true");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+[data-button="products"] {
+    background-color: steelblue;
+    color: aliceblue;
+    border: none;
+    font-size: 1.8rem;
+    padding: 0.6rem 2.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 20px auto;
+    width: 50%;
+    display: block;
+    transition: .2s ease-in-out; 
+}
+
+[data-button="products"]:hover {
+    background-color: brown;
+    transform: scale(1.2);
+}
+
+
+[data-anchor="team"] {
+    display: block;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10px;
+    margin: auto;
+    margin-top: 2rem;
+    animation: pulse 1.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.35);
+        opacity: .6;
+    }
+
+
+}
+
+.spinner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner {
+    animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #519ddb;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+
+
+h1, H2, p{
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+    justify-content: center;
+}
+
+table thead:first-child {
+    background-color: cornflowerblue;
+}
+
+tr:nth-child(2n) {
+    background-color: burlywood;
+}
+
+table, tr, td, th  {
+    margin: auto;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+/* @media screen and (min-width: 1000px) {
+    .bg {
+        height: 5vh;
+        width: 100vw;
+    }
+    
+} */
+
+@media screen and (max-width: 320) {
+    .bg {
+        height: 10vh;
+        width: 100%;
+       
+    }
+    
+}
+
