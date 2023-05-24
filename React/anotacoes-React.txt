@@ -1,0 +1,113 @@
+REACT:
+
+COMANDO PARA CRIAÇÃO DE NEW PROJECT:
+ npm create vite
+
+- selecionamos o nome do projeto
+- selecionamos a biblioteca REACT
+- selecionamos a linguagem
+- usamos: 1º: cd 'nomedoprojeto' | 2º npm install(ou npm i) | 3º npm run dev
+
+________________________________________________
+COMPONENT & PROPS:
+
+Funções e componentes sempre usam a primeira letra maiúscula.
+
+"App" é o primeiro componente do REACT.
+
+exemplo de criação de um componente "botão":
+
+function MeuBotao() {
+  return (
+    <button>Clique aqui!</button>
+  )
+}
+
+_________________________________________________
+Aquivos REACT são criados com a terminação ".jsx"
+
+_________________________________________________
+Os componentes devem ser criados em arquivos individuais e exportados.
+
+Ex: 
+
+function MeuComponente() {
+    return (
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur id ducimus non voluptatem tempore officiis fugit corporis. Distinctio magni beatae a vel voluptate reprehenderit, repellat amet culpa eligendi blanditiis.</p>
+    )
+  }
+
+export MeuComponente
+
+_________________________________________________
+podemos usar tudo na mesma linha tanto a declaração do componente quanto a exportação.
+
+EX:
+
+export default function MeuComponente() {
+    return (
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur id ducimus non voluptatem tempore officiis fugit corporis. Distinctio magni beatae a vel voluptate reprehenderit, repellat amet culpa eligendi blanditiis.</p>
+    )
+  }
+
+_________________________________________________
+
+PROPS: propriedades/parâmetros/objeto
+são configurações que passamos para um componente.
+
+ex:
+
+function App() {
+
+  return (
+    <div>
+
+      <h1>Olá Mundo, React</h1>
+      <MeuComponente/>
+      
+      <MeuBotao conteudo = 'me clique'/>
+      
+      <MeuBotao conteudo = 'depois aqui'/> // "contedo" é uma prop
+
+      <MeuBotao conteudo = 'e por fim aqui'/>
+    </div>
+    
+  )
+}
+
+function MeuBotao() {
+  return (
+    <button>Clique aqui!</button>
+  )
+}
+
+
+dentro de uma PROP podemos passar até mesmo funções.
+
+
+_________________________________________________________
+
+criando uma função CONTADOR:
+
+export default function MeuContador() {
+    
+    let contador = 0 // variável contador criada
+    
+    return (
+        <div>
+            <h1>Meu Contador</h1>
+            <h3>{contador}</h3> // usando chaves para adc a variável contador no h3
+        </div>
+    )
+}
+
+_________________________________________________
+EM LISTAS NO REACT:
+sempre temos que definir uma chave única para cada item da lista.
+
+____________________________________________________________
+EFEITOS COLATERAIS EM REACT:
+
+- busca de dados dentro de um aplicativo
+
+- de acordo com os inputs tem algum tipo de reação do app
